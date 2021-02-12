@@ -44,28 +44,32 @@
 }
 @include media-lg{
     .about{
-        padding: 2rem;
+        padding: 3rem;
         margin: 0;
         align-items: flex-start;
         text-align: left;
         h2{
             width: 50%;
             margin-left: 0;
-            padding: 2rem;
+            padding: 2rem 0;
+            padding-left: 1rem;
         }
         p{
             width: 60%;
-            padding: 2rem;
+            padding: 2rem 0;
+            padding-left: 1rem;
         }
         &__items{
+            padding-left: 1rem;
             grid-template-columns: repeat(4, 1fr);
-            justify-items: flex-start;
+            
+            justify-items:stretch;
             h3{
-                padding: 1rem;
+                padding: 1rem 0;
             }
             p{
                 width: 100%;
-                padding: 1rem;
+                padding: 1rem 0;
             }
         }
     }
@@ -73,26 +77,5 @@
 @include media-xl{
     .about{
         padding: 4rem;
-        
-        h2{
-            width: 50%;
-            margin-left: 0;
-            padding: 2rem;
-        }
-        p{
-            width: 60%;
-            padding: 2rem;
-        }
-        &__items{
-            grid-template-columns: repeat(4, 1fr);
-            justify-items: flex-start;
-            h3{
-                padding: 1rem;
-            }
-            p{
-                width: 100%;
-                padding: 1rem;
-            }
-        }
     }
 }

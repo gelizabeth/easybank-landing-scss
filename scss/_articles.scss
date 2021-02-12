@@ -63,7 +63,7 @@
 }
 @include media-lg{
     .articles{
-        padding: 4rem;
+        padding: 3rem;
         h2{
             text-align: left;
             padding-left: 1rem;
@@ -74,4 +74,9 @@
         }
     }
 
+}
+@include media-xl{
+    .articles{
+        padding: 4rem;
+    }
 }

@@ -1,17 +1,29 @@
 @import 'config', './responsive', './home', './about','./articles', './footer', './nav';
-
+html {
+    scroll-behavior: smooth;
+  }
 header{
     width: 100%;
     padding: 1rem;
-    background-color: #fff;
+    
     box-sizing: border-box;
-    position: relative;
+    position: sticky;
+    top: 0;
+    background-color: rgba($color: #fff, $alpha: 1);
     z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include transition-ease;
     .btn{
         display: none;
+    }
+    &.transparent{
+        background-color: rgba($color: #fff, $alpha: 0.7);
+    }
+    a{
+    display: flex;
+    align-items: center;
     }
 }
 .attribution{
@@ -38,7 +50,11 @@ a{
 }
 @include media-md{
     header{
+        &.transparent{
+            background-color: #fff;
+        }
         justify-content: space-evenly;
+        position: fixed;
         .btn{
             display: block;
             margin: 0;

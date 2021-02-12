@@ -3,8 +3,19 @@ const hamburger = document.querySelector('.nav-btn__burger');
 const nav = document.querySelector('.nav');
 const navItemsElement = document.querySelector('.nav__items');
 const navItemsArray = document.querySelectorAll('.nav__item');
+const header = document.querySelector('header');
 
 let showMenu = false;
+
+ const handleScroll = () => {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        header.classList.add('transparent');
+        
+      } else {
+        header.classList.remove('transparent');
+      }
+ }
+
 const toggleMenu = () => {
     console.log('toggled');
     if(!showMenu){
@@ -22,3 +33,4 @@ const toggleMenu = () => {
     }
 }
 navBtn.addEventListener('click', toggleMenu);
+window.onscroll = handleScroll;

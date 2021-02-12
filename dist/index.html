@@ -15,25 +15,26 @@
 </head>
 <body>
     <header>
-        <img src="./img/logo.svg" alt="easybank logo" class="nav__img">
+        <a href="#home"><img src="./img/logo.svg" alt="easybank logo" class="nav__img"></a>
+        
         <div class="nav-btn">
             <span class="nav-btn__burger"></span>
         </div>
         <nav class="nav">
             
             <ul class="nav__items">
-                <li class="nav__item"><a href="" class="nav__item">Home</a></li>
-                <li class="nav__item"><a href="" class="nav__item">About</a></li>
-                <li class="nav__item"><a href="" class="nav__item">Contact</a></li>
-                <li class="nav__item"><a href="" class="nav__item">Blog</a></li>
-                <li class="nav__item"><a href="" class="nav__item">Careers</a></li>
+                <li class="nav__item"><a href="#home" class="nav__item">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__item">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__item">Contact</a></li>
+                <li class="nav__item"><a href="#articles" class="nav__item">Blog</a></li>
+                <li class="nav__item"><a href="#" class="nav__item">Careers</a></li>
             </ul>
             
         </nav>
         <div class="btn">Request invite</div>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="home__img"><img src="./img/image-mockups.png" alt="mobile mokups" class="home__img-img"></div>
             <div class="home__content">
                 <h1>Next generation digital banking</h1>
@@ -42,7 +43,7 @@
             </div>
             
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <h2>Why choose Easybank?</h2>
             <p>We leverage Open Banking to turn your bank account into your financial hub. Control 
                 your finances like never before.</p>
@@ -73,7 +74,7 @@
                 </div>
             </div>
         </section>
-        <section class="articles">
+        <section class="articles" id="articles">
             <h2>Latest Articles</h2>
             <div class="articles__content">
                 <div class="article">
@@ -86,7 +87,7 @@
                     </div>
                     
                 </div>
-                <div class="article">
+                <div class="article" >
                     
                     <img src="./img/image-restaurant.jpg" alt="restaurant image" class="article__img">
                     <div class="article__content">
@@ -124,7 +125,10 @@
     </main>
 <footer>
     <div class="footer__section">
-        <img src="./img/logo.svg" alt="logo" class="logo">
+        <a href="#home">
+            <img src="./img/logo.svg" alt="logo" class="logo">
+        </a>
+        
         <div class="social-icons">
             
             <a href="#">
@@ -147,12 +151,12 @@
     </div>
    
     <ul class="site-map">
-        <li class="site-map__item"><a href="">About Us</a></li>
-        <li class="site-map__item"><a href="">Contact</a></li>
-        <li class="site-map__item"><a href="">Blog</a></li>
-        <li class="site-map__item"><a href="">Careers</a></li>
-        <li class="site-map__item"><a href="">Support</a></li>
-        <li class="site-map__item"><a href="">Privacy Policy</a></li>
+        <li class="site-map__item"><a href="#about">About Us</a></li>
+        <li class="site-map__item"><a href="#">Contact</a></li>
+        <li class="site-map__item"><a href="#articles">Blog</a></li>
+        <li class="site-map__item"><a href="#">Careers</a></li>
+        <li class="site-map__item"><a href="#">Support</a></li>
+        <li class="site-map__item"><a href="#">Privacy Policy</a></li>
     </ul>
     <div class="footer__section">
         <div class="btn"> Request Invite</div>
