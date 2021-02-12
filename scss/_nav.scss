@@ -68,6 +68,7 @@
 
     &.open {
         visibility: visible;
+        
     }
 
     &__img {
@@ -85,17 +86,19 @@
         padding: 2rem;
         background: #fff;
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: column;
         
         align-items: center;
         justify-content: space-between;
         list-style: none;
         
-        transform: translateY(-100%);
+        transform: translateY(-80%);
         @include transition-ease;
+        opacity: 0;
 
         &.open {
             transform: translateY(0);
+            opacity: 1;
         }
 
     }
@@ -103,9 +106,11 @@
     &__item {
         transform: translateX(100vw);
         @include transition-ease;
+        
 
         &.open {
             transform: translateX(0);
+            
         }
         a{
             font-weight: 300;
