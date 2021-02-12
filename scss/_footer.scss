@@ -1,0 +1,46 @@
+footer{
+    background-color: $dark-blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 2rem;
+    .logo{
+        filter: invert(20%) sepia(0) saturate(100%) hue-rotate(0deg) brightness(97%) contrast(100%);
+    }
+    .social-icons{
+        padding: 1rem;
+        a{
+            color: $very-light-gray;
+            text-decoration: none;
+            margin: 0.5rem;
+            font-size: 0.8rem;
+            @include transition-ease;
+                &:visited{
+                    color: $very-light-gray; 
+                }
+                &:hover{
+                    color: $lime-green;
+                }
+        }
+        
+    }
+    .site-map{
+        list-style: none;
+        text-align: center;
+        &__item{
+            margin: 1rem;
+            a{
+                color: $very-light-gray;
+                text-decoration: none;
+                @include transition-ease;
+                &:visited{
+                    color: $very-light-gray; 
+                }
+                &:hover{
+                    color: $lime-green;
+                }
+            }
+
+        }
+    }
+}

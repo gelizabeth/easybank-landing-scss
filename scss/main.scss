@@ -10,5 +10,26 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.attribution{
+background-color: $bright-cyan;
+color: $dark-blue;
+padding: 0.5rem;
+font-size: 0.8rem;
+text-align: center;
+a{
+    @include transition-ease;
+    color: white;
+    font-weight: 700;
     
+    &:visited{
+        color: white;
+    }
+    &:active{
+        color: white;
+    }
+    &:hover{
+        color: lighten($lime-green, 30%);
+    }
+}
 }
