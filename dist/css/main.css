@@ -19,7 +19,7 @@ h1, h2, h3 {
 
 .home {
   position: relative;
-  top: -6rem;
+  top: -8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +30,7 @@ h1, h2, h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  height: 100vh;
 }
 
 .home__img {
@@ -39,23 +39,16 @@ h1, h2, h3 {
   z-index: 1;
   background-image: url("../img/bg-intro-mobile.svg");
   background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
-  max-height: 50vh;
+  position: relative;
+  text-align: center;
 }
 
 .home__img img {
-  position: relative;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   width: 80%;
+  position: relative;
 }
 
 .home h1 {

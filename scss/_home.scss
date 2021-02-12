@@ -1,28 +1,29 @@
 .home{
     position: relative;
-    top:-6rem;
+    top:-8rem;
     display: flex;
     
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     
     &__img{
         box-sizing: border-box;
         z-index: 1;
         background-image: url('../img/bg-intro-mobile.svg');
         background-repeat: no-repeat;
-        
+        background-position: top;
         background-size: cover;
-        display: flex;
-        justify-content: center;
-            width: 100%;
-            max-height: 50vh;
+        width: 100%;
+        
+        position: relative;
+        text-align: center;
  
         img{
-            position: relative;
-            height: max-content;
             width: 80%;
+            position: relative;
+
+
             
         }
     }
