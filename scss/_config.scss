@@ -24,6 +24,9 @@ h1,h2,h3{
     font-weight: 300;
     color: $dark-blue;
 }
+p{
+    color: $grayish-blue;
+}
 
 @mixin media-md {
     @media screen and (min-width: 768px) {

@@ -17,9 +17,13 @@ h1, h2, h3 {
   color: #2d314d;
 }
 
+p {
+  color: #9698a6;
+}
+
 .home {
   position: relative;
-  top: -8rem;
+  top: -7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,6 +89,57 @@ h1, h2, h3 {
 
 .btn:hover {
   opacity: 0.8;
+}
+
+.about {
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.about p {
+  width: 90%;
+  line-height: 1.6rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  width: 80%;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.about__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.about__item {
+  margin: 1rem 0 0 0;
+}
+
+.about__item p {
+  margin: auto;
+}
+
+.about__item img {
+  margin: 1rem;
 }
 
 .nav-btn {
