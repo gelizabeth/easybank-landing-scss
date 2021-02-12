@@ -20,12 +20,13 @@ body{
     font-family: 'Public Sans', sans-serif;
     line-height: 1;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     font-weight: 300;
     color: $dark-blue;
 }
-p{
+h5,p{
     color: $grayish-blue;
+    font-weight: 300;
 }
 
 @mixin media-md {
