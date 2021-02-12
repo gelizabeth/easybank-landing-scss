@@ -135,3 +135,42 @@
         transition-delay: ($i*0.05s) + 0.1s;
     }
 }
+@include media-md{
+    .nav{
+        visibility: visible;
+        background: transparent;
+        height: unset;
+        width: unset;
+        position: relative;
+        width: 50%;
+        &-btn{
+            display: none; 
+        }
+        &__items{
+            opacity: 1;
+            transform: translateY(0);
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: unset;
+            margin: unset;
+            position: unset;
+            padding: 0.5rem;
+        }
+        &__item{
+            transform: translateX(0);
+            margin: 0 0.5rem;
+            a{
+                transition-delay: 0;
+                margin: 0;
+                padding-bottom: 3px;
+                color: $grayish-blue;
+                &:hover{
+                    border-bottom: $lime-green 2px solid;
+                    color: $dark-blue;
+                }
+            }
+        }
+    }
+
+}

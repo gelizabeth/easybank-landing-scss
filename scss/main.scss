@@ -1,4 +1,4 @@
-@import 'config', './home', './about','./articles', './footer', './nav','./responsive';
+@import 'config', './responsive', './home', './about','./articles', './footer', './nav';
 
 header{
     width: 100%;
@@ -10,6 +10,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .btn{
+        display: none;
+    }
 }
 .attribution{
 background-color: $bright-cyan;
@@ -32,4 +35,13 @@ a{
         color: lighten($lime-green, 30%);
     }
 }
+}
+@include media-md{
+    header{
+        justify-content: space-evenly;
+        .btn{
+            display: block;
+            margin: 0;
+        }
+    }
 }
