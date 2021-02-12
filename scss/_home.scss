@@ -115,6 +115,7 @@
 }
 @include media-lg{
     .home{
+        padding:0 2rem;
         &__content{
             padding: 2rem;
             

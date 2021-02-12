@@ -63,6 +63,7 @@
 }
 @include media-lg{
     .articles{
+        padding: 4rem;
         h2{
             text-align: left;
             padding-left: 1rem;

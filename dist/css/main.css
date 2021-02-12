@@ -145,6 +145,9 @@ h5, p {
 }
 
 @media screen and (min-width: 1024px) {
+  .home {
+    padding: 0 2rem;
+  }
   .home__content {
     padding: 2rem;
   }
@@ -363,6 +366,9 @@ h5, p {
 }
 
 @media screen and (min-width: 1024px) {
+  .articles {
+    padding: 4rem;
+  }
   .articles h2 {
     text-align: left;
     padding-left: 1rem;
