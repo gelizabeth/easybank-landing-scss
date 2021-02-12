@@ -18,7 +18,8 @@ h1, h2, h3 {
 }
 
 .home {
-  height: 100vh;
+  position: relative;
+  top: -6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,8 +30,6 @@ h1, h2, h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
-  margin-bottom: 2rem;
 }
 
 .home__img {
@@ -39,7 +38,6 @@ h1, h2, h3 {
   z-index: 1;
   background-image: url("../img/bg-intro-mobile.svg");
   background-repeat: no-repeat;
-  background-position: bottom;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,23 +45,22 @@ h1, h2, h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  height: 80vh;
   width: 100%;
-  bottom: 10rem;
 }
 
 .home__img img {
   position: relative;
-  height: 100%;
-  top: -5rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 80%;
 }
 
 .home h1 {
-  padding-top: 25rem;
+  width: 90%;
   margin: 1rem auto;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .home p {
@@ -78,7 +75,7 @@ h1, h2, h3 {
 .btn {
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
-  width: 30%;
+  width: 40%;
   text-align: center;
   padding: 0.8rem;
   border-radius: 25px;
@@ -98,8 +95,8 @@ h1, h2, h3 {
 .nav-btn {
   position: absolute;
   z-index: 1;
-  right: 1.5rem;
-  top: 1.5rem;
+  right: 1rem;
+  top: 1rem;
   height: 20px;
   width: 28px;
   cursor: pointer;
@@ -160,11 +157,11 @@ h1, h2, h3 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   opacity: 1;
   visibility: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, #fff), color-stop(9%, #2d314d), to(transparent));
-  background: linear-gradient(to bottom, #fff 9%, #2d314d 9%, transparent);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3.25rem, #fff), color-stop(3.25rem, #2d314d), to(transparent));
+  background: linear-gradient(to bottom, #fff 3.25rem, #2d314d 3.25rem, transparent);
   overflow: hidden;
   height: 100vh;
 }
@@ -182,10 +179,10 @@ h1, h2, h3 {
   border-radius: 5px;
   position: relative;
   z-index: 1;
-  height: 50vh;
-  width: 90%;
-  margin: 6rem auto;
-  padding: 3rem;
+  height: 30vh;
+  width: 80%;
+  margin: 5rem auto;
+  padding: 2rem;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,8 +191,6 @@ h1, h2, h3 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -ms-flex-direction: column;
-      flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -203,7 +198,6 @@ h1, h2, h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-  padding-right: 1rem;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: all 0.25s ease-in-out;
@@ -230,8 +224,8 @@ h1, h2, h3 {
 .nav__item a {
   font-weight: 300;
   text-decoration: none;
-  font-size: 1.5rem;
-  color: #9698a6;
+  font-size: 1.25rem;
+  color: #2d314d;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid transparent;
   -webkit-transition: all 0.25s ease-in-out;
@@ -265,11 +259,20 @@ h1, h2, h3 {
 
 header {
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
