@@ -1,4 +1,4 @@
-@import 'config', './responsive', './home', './about','./articles', './footer', './nav';
+@import './responsive', 'config' , './home', './about','./articles', './footer', './nav';
 html {
     scroll-behavior: smooth;
   }
@@ -59,5 +59,22 @@ a{
             display: block;
             margin: 0;
         }
+    }
+}
+@include media-xl{
+    .btn{
+        max-width: 250px;
+        width: 250px;
+    }
+}
+@include media-xxl{
+    .btn {
+        margin-left: 2rem;
+        max-width: 400px !important;
+        width: 300px;
+        border-radius: 50px;
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
     }
 }

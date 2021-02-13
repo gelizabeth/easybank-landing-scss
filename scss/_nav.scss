@@ -182,3 +182,15 @@
     }
 
 }
+@include media-xl{
+    .nav{
+        &__img{
+            transform: scale(1.4);
+        }
+        &__item{
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

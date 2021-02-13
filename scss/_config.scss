@@ -15,10 +15,29 @@ $very-light-gray:hsl(0, 0%, 98%);
     padding: 0;
 }
 body{
-    background-color: #fff;
+    background-color: $very-light-gray;
     color: $light-grayish-blue;
     font-family: 'Public Sans', sans-serif;
     line-height: 1;
+
+}
+.btn {
+    background: linear-gradient(to right, $lime-green, $bright-cyan);
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 1;
+    margin: 1rem auto;
+    max-width: 150px;
+    @include transition-ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 h1,h2,h3,h4{
     font-weight: 300;
@@ -27,6 +46,91 @@ h1,h2,h3,h4{
 h5,p{
     color: $grayish-blue;
     font-weight: 300;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+
+    font-size: 2rem;
+    line-height: 2rem;
+}
+h3{
+
+}
+h4{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+}
+h5{
+
+}
+p{
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+}
+@include media-md{
+h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+.btn{
+    margin: 1rem;
+}
+}
+@include media-lg{
+    
+}
+@include media-xl{
+    h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+    h5{
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+@include media-xxl{
+    h1 {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    h4{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        
+    }
+    h5{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    p {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    .btn{
+        max-width: 400px;
+        width: 500px;
+        padding: 1.5rem;
+    }
 }
 
 

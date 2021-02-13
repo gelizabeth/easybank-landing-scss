@@ -8,13 +8,9 @@
     padding: 2rem 0;
     p{
         width: 90%;
-        line-height: 1.6rem;
         padding: 1rem;
-        font-size: 1.2rem;
     }
     h2{
-        font-size: 2rem;
-        line-height: 2rem;
         width: 80%;
         padding: 2rem;
         padding-bottom: 0;
@@ -26,19 +22,29 @@
     }
     &__item{
         margin: 1rem 0 0 0;
+        transform: translateX(-100%);
+        opacity: 0.7;
+        @include transition-ease;
         p{
             margin: auto;
         }
         img{
             margin: 1rem;
         }
-        
+        &.open{
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 }
 @include media-md{
     .about{
         &__items{
             grid-template-columns: repeat(2, 1fr);
+        }
+        &__item{
+            transform: unset;
+            opacity: 1;
         }
     }
 }
@@ -60,7 +66,7 @@
             padding-left: 1rem;
         }
         &__items{
-            padding-left: 1rem;
+            padding: 1rem;
             grid-template-columns: repeat(4, 1fr);
             
             justify-items:stretch;
@@ -72,10 +78,23 @@
                 padding: 1rem 0;
             }
         }
+        &__item{
+            
+            margin: 1rem;
+            img{
+                margin: unset;
+            }
+        }
     }
 }
 @include media-xl{
     .about{
         padding: 4rem;
+    }
+}
+@include media-xxl{
+    .about{
+        padding: 10rem;
+
     }
 }

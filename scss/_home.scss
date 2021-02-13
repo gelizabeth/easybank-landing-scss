@@ -1,14 +1,13 @@
-.home{
+.home {
     position: relative;
-    top:-7rem;
+    top: -7rem;
     display: flex;
-    
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: $very-light-gray;
+    // height: 100vh;
     
-    &__img{
+
+    &__img {
         box-sizing: border-box;
         z-index: 1;
         background-image: url('../img/bg-intro-mobile.svg');
@@ -16,132 +15,101 @@
         background-position: top;
         background-size: cover;
         width: 100%;
-        
         position: relative;
         text-align: center;
- 
-        img{
+        img {
             width: 80%;
             position: relative;
-
-
-            
         }
     }
-    &__content{
-        h1{
-    
+
+    &__content {
+        h1 {
             width: 90%;
             margin: 1rem auto;
-        text-align: center;
-        font-size: 2.5rem;
+            text-align: center;
         }
-        p{
+
+        p {
             width: 90%;
             margin: 1rem auto;
             text-align: center;
             color: $grayish-blue;
-            line-height: 1.6rem;
-            font-size: 1.1rem;
         }
     }
-    
 }
-.btn{
-    background: linear-gradient(to right, $lime-green, $bright-cyan);
-    width: 40%;
-    text-align: center;
-    padding: 0.8rem;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    font-weight: 700;
-    cursor: pointer;
-    opacity: 1;
-    margin:1rem auto;
-    max-width: 150px;
-    @include transition-ease;
 
-    &:hover{
-        opacity: 0.8;
-    }
-}
-@include media-md{
-    .home{
+
+
+@include media-md {
+    .home {
         flex-direction: row-reverse;
-        top:0;
+        top: 0;
         height: 80vh;
         width: 100vw;
-        &__img{
+
+        &__img {
             flex: 0.6;
             max-width: 60vw;
-            
+
             background-image: none;
-           
+
             z-index: 1;
             box-sizing: border-box;
-            
-            img{
+
+            img {
                 position: absolute;
                 width: 100%;
                 display: block;
-                
+
                 background-image: url('../img/bg-intro-desktop.svg');
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
-                top:-19rem;
-                
-                
+                top: -19rem;
             }
         }
-        &__content{
+
+        &__content {
             flex: 0.4;
             padding: 1rem;
-            
-            h1{
-                font-size: 2rem;
+            h1 {
                 text-align: left;
-                line-height: 2.5rem;
             }
-            p{
-                text-align: left; 
-            }
-            .btn{
-                width: 150px;
-                margin-left: 1rem;
+            p {
+                text-align: left;
             }
         }
     }
 }
-@include media-lg{
-    .home{
-        padding:0 2rem;
-        &__content{
+
+@include media-lg {
+    .home {
+        padding: 0 2rem;
+        &__content {
             padding: 2rem;
-            
         }
     }
 }
-@include media-xl{
- .home{
-     &__img{
-         img{
-             top: -30rem;
-         }
-     }
-     &__content{
-         h1{
-             font-size: 3rem;
-             line-height: 3.5rem;
-         }
-         p{
-             font-size: 1.5rem;
-             line-height: 2rem;
-         }
-        .btn{
-            margin-left: 1.5rem;
-            width: 200px;
+
+@include media-xl {
+    .home {
+        &__img {
+            img {
+                top: -30rem;
+            }
         }
-     }
- }
+
+    }
+}
+
+@include media-xxl {
+    .home {
+        padding: 0 10rem;
+        &__img {
+            img {
+                top: -50rem;
+            }
+        }
+    }
 }
